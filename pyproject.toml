@@ -1,0 +1,26 @@
+[project]
+name = "study-lightrag"
+version = "0.1.0"
+description = "LightRAG study project"
+authors = [
+    {name = "kou",email = "kou.matsumoto.jp@gmail.com"}
+]
+readme = "README.md"
+requires-python = "^3.10"
+dependencies = [
+    "lightrag-hku (>=1.3.0,<2.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "tiktoken (>=0.9.0,<0.10.0)",
+    "pydantic (>=2.11.2,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "study_lightrag"}]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
